@@ -1,0 +1,15 @@
+ifconfig - List IPS on system
+ip addr show
+ping ip - Test network packets reliability
+tracert dns or ip - All hops to reach the destination and time taken for packets
+netstat -antp -> Shows all tcp open ports
+ps -ef | grep process -> lists process and greps it you can get process ID and use to grep in netstat
+
+
+IP is for host identification
+Port is for communication between services
+nmap - illegal in some countries
+
+dig dns - DNS lookup also records 
+
+nslookup dns
