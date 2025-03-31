@@ -1,0 +1,16 @@
+Source code -> compile -> test -> package(archive like jar war zip) -> code analysis
+Java
+Build file - xml format
+mvn validate - checks if all necessary information is there and structure is good
+mvn compile - compile source code of project
+mvn test - test the compiled source code with some unit testing framework.
+mvn package - creates archive that can be shipped or distributed such as jar
+mvn verify - run checks on results of integration test
+mvn install - downloads all dependencies to local
+mvn deploy - copies final package to remote repo for sharing
+
+mvn uses pom.xml
+
+mvn clean - removes target folder
+
+/home/username/.m2/repository has maven dependencies
