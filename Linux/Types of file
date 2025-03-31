@@ -1,0 +1,10 @@
+regular file -
+directory d
+link l
+special file c - Mechanism used to input output
+socket s - A special file that provided inter process networking protected by the file systems access control
+pipe p -A special file that allows processes to communicate with each other without using network socket semantics
+
+file filename - Shows type of file
+ln -s destination-file short-cut-path - creates softlin/short cut
+unlink or rm

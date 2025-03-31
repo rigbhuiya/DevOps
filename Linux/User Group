@@ -1,0 +1,15 @@
+/etc/passwd - users
+/etc/group - group
+id user - user details
+useradd user 
+usermod -aG group user
+passwd user - set user password
+su - user 
+last - users that logged in
+userdel user 
+lsof -u user - lists file opened by user 
+
+chown -R user:group /file 
+chmod -R o-r /file
+
+cd etc/sudoers.d - .d for directory

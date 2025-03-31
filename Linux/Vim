@@ -1,0 +1,26 @@
+vim file
+
+opens in command mode
+insert mode - i
+extended command mode uses :
+
+gg - begining of page
+G end of page
+w to move cursor forward word by word
+b back word by word
+nw
+nb
+u undo last word
+U undo last line
+yy copy line
+nyy
+p paste after
+P paste before
+:se nu - set number on lines
+dw delete letter by letter backward (backspace)
+x (del key)
+dd delete entire line
+ndd 
+/ search word in file
+
+:%s/search word/replace word/g

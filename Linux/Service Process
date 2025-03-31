@@ -1,0 +1,22 @@
+systemct start/stop
+systemctl enable/disable - starts at boottime
+systemctl is-enabled servicename
+restart
+reload
+cat /etc/systemd/system/
+
+top - shows dynamic process like taskmanager shows ram cpu usage
+ps aux - similar to top but shows and exits
+pid 1 - first process init or systemd
+
+ps -ef - shows ppip
+
+ppid - parent pid
+
+xargs - takes out of previous as input
+ps -ef | grep httpd | grep -v 'grep ' | awk '{print $2}' | xargs kill -9 
+
+Archive
+tar -czvf name-of-file-after-zip.tar.gz the-file-to-compress - create zip verbose file
+tar -xzvf name-of-file-after-zip.tar.gz - extract 
+tar -xzvf name-of-file-after-zip.tar.gz -C /opt - extract to /opt

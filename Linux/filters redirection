@@ -1,0 +1,22 @@
+grep -iR folder *
+SELINUX - security enhanced linux
+grep -R SELINUX /etc/*
+grep -v keyword - show data not keyword
+
+less
+head -n 5
+tail -n 5
+
+tail -f - shows dynamic content helpful seeing logs
+cd /var/log
+cat /var/log/messages show login events also
+
+cut -d: -f1 /filepath - shows 1st row and : delimited
+
+awk -F':' '{print $1}'
+
+sed -i 's/search/replace/g' files 
+
+------------------------
+
+> , >>

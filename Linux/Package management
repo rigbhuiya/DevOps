@@ -1,0 +1,6 @@
+arch - architecture
+uname -m
+curl dns -o filename - save output in file
+yum dnf apt
+wget to download
+/etc/yum.repos.d 

@@ -1,0 +1,23 @@
+Linux Distros - flavours of Linux
+
+RH - Stable secure - software from rh repo only - Used in server 
+Ubuntu - Latest tools available - easy to install opeensource software - Used to setup tools for automation
+
+rpm - redhat - rhel centos - packaging format like exe apk
+dpkg - debian - ubuntu kali
+
+User executables - /bin , /usr/bin, /usr/local/bin
+/sbin , /usr/sbin, /usr/local/sbin - Used by root user
+/etc - Configuration
+/media,/mnt - usb and other media
+/tmp - temporary might get deleted in boot
+/boot - kernel and bootloader
+/var , /srv - server data
+/proc /sys - process services
+/lib , /usr/lib, /usr/local/lib - user shared libraries
+
+ssh -i private-key user@host
+/etc/os-release - what operating sys and release
+ find ./ | grep file/folder - find filfolder in current directory
+
+ 

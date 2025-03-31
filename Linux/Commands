@@ -1,0 +1,9 @@
+mkdir
+touch testfile{1..3}.txt
+cp -r -> to copy directory
+mv to move and rename
+mkdir -p /opt/something/something2 - Makes entire system
+
+free -m - free ram 
+df -h - free disk
+du -h - disk usage
