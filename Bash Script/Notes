@@ -1,0 +1,35 @@
+#!/bin/bash -> Shebang operator
+variables are temporary storage for processes
+value of $0 is name of script file 
+to unset variable
+unset $var
+$# -> How many arguments
+$@ -> all arguments provided to bash script
+$$-> PID of current script
+
+
+export to set env variables
+export EDITOR=vim
+exit 1 -> stops script and exits
+
+: '
+This is a
+Multi-line comments
+'
+
+/etc/profile - Global variable
+.bashrc - user specific
+
+bashrc overrides
+
+read -sp "Enter password" pass
+
+cat /var/run - has pids
+
+crontab -e 
+MM HH DOM mm DOW command
+30 * * * * /some.sh
+
+/etc/ssh/sshd_config
+
+ssh-copy-id
