@@ -22,3 +22,6 @@ nslookup dns
 
 OSI - Open System Interconnection
 ISO - International Organisation of Standardisation
+
+127.0.0.0/8 is loopback range specific to local machine
+127.0.0.1 is default
