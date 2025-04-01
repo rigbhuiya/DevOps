@@ -1,0 +1,32 @@
+Uses ssh api to push scripts
+python library
+written in yaml
+has modules
+api for cloud to connect
+ssh connect to linux
+winrm for windows
+inventory + modules = playbook , the config pushed to machines
+group of python modules is package
+/etc/ansible/ansible.cfg has config
+host_key_checking=FALSE
+chmod 400 cliemtkey.pem
+dont use - in inventory
+Ansible is idempotent config management tool i.e only applies if there is change in state
+Gathering facts uses default module called setup in the runtime
+ansible module index
+community ansible files
+
+/etc/ansible/ansible.cfg -> global config lowest priority
+ANSIBLE_CONFIG=filepath variable highest priority
+ansible.cfg in current directory 2nd priority
+~/.ansible.cfg in home directory 3rd priority
+
+group_vars/all
+group_vars/groupname
+host_vars/hostname
+
+Fact variables from setup module
+Priority
+Through commandline -e variable=value>playbook variable>host_vars/hostname>group_vars/groupname>group_vars/all
+
+template vs copy - copy puts file as it is and template can use variables with {{variable_name}}

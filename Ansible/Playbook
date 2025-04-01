@@ -1,0 +1,64 @@
+- name: Webserver setup
+  hosts: group1
+  become: yes
+  gather_facts: true/false
+  vars:
+    dbname: electric
+  vars_files:
+    - /path/to/file.yml
+  tasks:
+    - name: Install something
+      ansible.builtin.yum:
+        name: httpd
+        state: present
+
+    - name: Start service
+      ansible.builtin.service:
+        name: httpd
+        state: started
+        enabled: yes
+
+- name: DB setup
+  hosts: group2
+  become: yes
+  tasks:
+    - name: Install db
+      ansible.builtin.yum:
+        name: mariadb-server-"{{item}}" # Has to be named item the loop values
+        state: present
+    - name: Start DB service
+      ansible.builtin.service:
+        name: mariadb
+        state: started
+        enabled: yes
+      loop:
+        - some1
+        - some2
+        - some3
+
+    - name: Database create
+      ansible.builtin.service:
+        name: "{{dbname}}"
+        state: started
+        enabled: yes
+      register: dbout
+      when: (dbname=="something" and something['key']=="true") or (dbname=="something" and something['key']=="true")
+      notify:
+        - Install db # Needs to be exact name of handler
+
+    - debug:
+        msg: "The DB name is {{dbname}}"
+    - name: Print DB output
+      debug:
+        var: dbout
+
+  handlers:
+    - name: Install db
+      ansible.builtin.yum:
+        name: mariadb-server-"{{item}}" # Has to be named item the loop values
+        state: present
+    - name: Start DB service
+      ansible.builtin.service:
+        name: mariadb
+        state: started
+        enabled: yes

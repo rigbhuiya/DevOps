@@ -1,0 +1,28 @@
+all:
+  hosts:
+    web01:
+      ansible_user: username
+      ansible_host: ip address
+    web02:
+      ansible_user: username
+      ansible_host: ip address
+    db01:
+      ansible_user: username
+      ansible_host: ip address
+  children:
+    group1:
+      hosts:
+        web01:
+        web02:
+    group2:
+      hosts:
+    group_of_groups:
+      children:
+        group1:
+        group2:
+      vars:
+        ansible_ssh_private_key_file: address to pem file
+        
+
+
+host level vars will have highest priority

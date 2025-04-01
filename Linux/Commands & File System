@@ -20,4 +20,4 @@ ssh -i private-key user@host
 /etc/os-release - what operating sys and release
  find ./ | grep file/folder - find filfolder in current directory
 
- 
+/fstab - file system table tells linux system which files to mount at boot and how to mount them

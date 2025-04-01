@@ -1,0 +1,2 @@
+ansible -i inventory -m modules -a "arguments" --become
+ansible-playbook -i inventory playbook.yaml (-v, -vv, -vvv -> debug) (-C -> dry run)
